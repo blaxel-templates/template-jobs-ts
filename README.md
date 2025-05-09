@@ -1,10 +1,16 @@
-# Blaxel Job Template
+# Blaxel TypeScript Job Template
 
 <p align="center">
   <img src="https://blaxel.ai/logo.png" alt="Blaxel"/>
 </p>
 
-A template implementation of a job doing a task on Blaxel Platform.
+
+A template implementation of a TypeScript job using Blaxel. This job demonstrates a simple hello world job.
+
+## Features
+
+- Easy deployment of a job with Blaxel platform
+- Built on Blaxel for efficient job orchestration
 
 
 ## Prerequisites
@@ -59,12 +65,11 @@ bl run job my-job --file batches/sample-batch.json
 bl run job my-job --data '{"tasks": [{"name": "John"}]}'
 ```
 
-This command uses your code and the configuration files under the `.blaxel` directory to deploy your job.
-
 ## Project Structure
 
 - **src/index.ts** - Job entry point
 - **blaxel.toml** - Blaxel deployment configuration
+- **batches/** - Sample batch files
 
 ## License
 
