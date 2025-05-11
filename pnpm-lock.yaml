@@ -4,19 +4,16 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@blaxel/core': link:../../../sdk-ts/@blaxel/core
-
 importers:
 
   .:
     dependencies:
       '@blaxel/core':
-        specifier: 0.2.1-dev1
-        version: 0.2.1-dev1(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))
+        specifier: 0.2.1-dev4
+        version: 0.2.1-dev4(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))
       '@blaxel/telemetry':
-        specifier: 0.2.1-dev1
-        version: 0.2.1-dev1(react@19.1.0)(zod@3.24.4)
+        specifier: 0.2.1-dev4
+        version: 0.2.1-dev4(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))(react@19.1.0)(zod@3.24.4)
     devDependencies:
       '@types/express':
         specifier: ^5.0.1
@@ -95,12 +92,12 @@ packages:
     peerDependencies:
       zod: ^3.23.8
 
-  '@blaxel/core@0.2.1-dev1':
-    resolution: {integrity: sha512-TcJq1C4g79bDAw4PjDO5Jbgb0FJ2Dk9ZrXZNA+WIMc/YH6et/UVatWH+wjPfowo4a6AIUf8lp58Ow7wZXq6qOQ==}
+  '@blaxel/core@0.2.1-dev4':
+    resolution: {integrity: sha512-g6boG4/gr9HpKDpKwgndxopneDIZWb+08mNNPbzIjT2z+IgfDPr/v9KRGzF7uEvfVuxcm/N+f/5/7M931ATqMA==}
     engines: {node: '>=18'}
 
-  '@blaxel/telemetry@0.2.1-dev1':
-    resolution: {integrity: sha512-iEu1PbGJK06CVnCT11c4rWTcndZhsclanSkmdE6hlffrMbfmR5LbsSw7GvfQBFNhKi1n/IUIdo9KNjuFTbAWGQ==}
+  '@blaxel/telemetry@0.2.1-dev4':
+    resolution: {integrity: sha512-iqpK9scoz23+WC9FrvjNjcIViQDRcBAm5PuGqa81/brf0SggCIuS08XCnEJKNkbrtGJIjphX5JjpowZBKTquHg==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.25.2':
@@ -1205,7 +1202,7 @@ snapshots:
       zod: 3.24.4
       zod-to-json-schema: 3.24.5(zod@3.24.4)
 
-  '@blaxel/core@0.2.1-dev1(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))':
+  '@blaxel/core@0.2.1-dev4(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))':
     dependencies:
       '@hey-api/client-fetch': 0.10.0(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))
       '@modelcontextprotocol/sdk': 1.11.1
@@ -1224,14 +1221,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@blaxel/telemetry@0.2.1-dev1(react@19.1.0)(zod@3.24.4)':
+  '@blaxel/telemetry@0.2.1-dev4(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))(react@19.1.0)(zod@3.24.4)':
     dependencies:
       '@ai-sdk/anthropic': 1.2.11(zod@3.24.4)
       '@ai-sdk/cerebras': 0.2.14(zod@3.24.4)
       '@ai-sdk/google': 1.2.17(zod@3.24.4)
       '@ai-sdk/groq': 1.2.9(zod@3.24.4)
       '@ai-sdk/openai': 1.3.22(zod@3.24.4)
-      '@blaxel/core': link:../../../sdk-ts/@blaxel/core
+      '@blaxel/core': 0.2.1-dev4(@hey-api/openapi-ts@0.67.3(typescript@5.8.3))
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.200.0
       '@opentelemetry/exporter-logs-otlp-http': 0.200.0(@opentelemetry/api@1.9.0)
@@ -1246,8 +1243,11 @@ snapshots:
       '@opentelemetry/sdk-trace-node': 2.0.0(@opentelemetry/api@1.9.0)
       ai: 4.3.15(react@19.1.0)(zod@3.24.4)
     transitivePeerDependencies:
+      - '@hey-api/openapi-ts'
+      - bufferutil
       - react
       - supports-color
+      - utf-8-validate
       - zod
 
   '@esbuild/aix-ppc64@0.25.2':
