@@ -41,9 +41,9 @@ Start the job locally
 
 ```bash
 # Run the job with a sample batch file
-bl run job my-job --local --file batches/sample-batch.json
+bl run job jobs-ts --local --file batches/sample-batch.json
 # Or directly with --data argument
-bl run job my-job --local --data '{"tasks": [{"name": "John"}]}'
+bl run job jobs-ts --local --data '{"tasks": [{"name": "John"}]}'
 # Or without blaxel cli
 pnpm start --name John
 ```
@@ -60,9 +60,9 @@ bl deploy
 
 ```bash
 # Run the job with a sample batch file
-bl run job my-job --file batches/sample-batch.json
+bl run job jobs-ts --file batches/sample-batch.json
 # Or directly with --data argument
-bl run job my-job --data '{"tasks": [{"name": "John"}]}'
+bl run job jobs-ts --data '{"tasks": [{"name": "John"}]}'
 ```
 
 ## Project Structure
