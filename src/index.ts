@@ -1,4 +1,4 @@
-import { blJob, withSpan } from '@blaxel/core';
+import { startJob, withSpan } from '@blaxel/core';
 import '@blaxel/telemetry';
 import step1 from './steps/step1';
 import step2 from './steps/step2';
@@ -15,4 +15,4 @@ async function myJob({name}: JobArguments) {
   await withSpan('step3', step3);
 }
 
-blJob.start(myJob);
+startJob(myJob);
