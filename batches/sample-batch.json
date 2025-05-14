@@ -2,9 +2,6 @@
     "tasks": [
         {
             "name": "John"
-        },
-        {
-            "name": "Jane"
         }
     ]
 }
