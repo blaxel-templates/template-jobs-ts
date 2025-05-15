@@ -12,8 +12,8 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@blaxel/core": "0.2.4-dev.69",
-    "@blaxel/telemetry": "0.2.4-dev.69"
+    "@blaxel/core": "0.2.4-dev.72",
+    "@blaxel/telemetry": "0.2.4-dev.72"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
