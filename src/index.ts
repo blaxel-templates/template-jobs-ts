@@ -16,7 +16,7 @@ async function myJob({name}: JobArguments) {
     },
     root: true
   }, async (span) => {
-    console.log(`Hello, world ${name}!`);
+    console.log(`Hello, ${name}!`);
     await step1(name);
     await step2(name);
     await step3(name);
