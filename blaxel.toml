@@ -10,5 +10,5 @@ type = "job"
 # [runtime]
 # memory = 1024
 # maxConcurrentTasks = 10
-# timeout = 900
+# timeout = "15m"
 # maxRetries=0
