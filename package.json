@@ -12,13 +12,13 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@blaxel/core": "0.2.68",
-    "@blaxel/telemetry": "0.2.68"
+    "@blaxel/core": "0.2.91",
+    "@blaxel/telemetry": "0.2.91"
   },
   "devDependencies": {
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.13.11",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   }
 }
